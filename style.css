@@ -10,6 +10,9 @@ a {
   text-decoration: none;
   color: black;
 }
+ul a:hover{
+    text-decoration: 2px underline;
+}
 p{
     font-size: 25px;
 }
