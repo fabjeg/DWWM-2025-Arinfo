@@ -1,0 +1,66 @@
+.ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+  list-style: none;
+  margin-left: auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+p{
+    font-size: 25px;
+}
+h1, h2 {
+  margin: 10px 10px 10px 10px;
+  color: royalblue;
+  text-decoration: 2px underline;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+.container-img{
+    display: flex;
+    width: 900px;
+    height: 500px;
+    background-image: url("https://www.sony.fr/image/bc6d25fa6371c2899ce704a2bed7614c?fmt=png-alpha&wid=960");
+}
+.container-img h3{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+img {
+  width: 50%;
+  height: 50%;
+  border-radius: 3rem;
+}
+.picture-link img {
+  width: 30%;
+  height: 30%;
+}
+.picture-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.picture-link img:hover{
+    background-color: green;
+}
+em {
+  font-size: 20px;
+  color: red;
+}
+ol{
+    font-size: 20px;
+}
+ol li{
+    margin: 10px;
+}
