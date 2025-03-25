@@ -5,11 +5,11 @@ body {
 h1 {
     text-align: center;
     text-decoration: underline;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease-in-out;
   }
   h1:hover {
     transform: scale(1.05);
-    color: aquamarine;
+    color: #f00;
 }
 table {
     border-collapse: collapse;
