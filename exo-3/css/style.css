@@ -1,0 +1,289 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+h2,
+h3 {
+  font-size: 25px;
+}
+body {
+  background: #8e9eab;
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+}
+.li_nav {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+.li_nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.li_nav a:hover {
+  color: #f1c40f;
+  text-decoration: underline;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.background-img {
+  background-image: url("https://www.lac-annecy.com/content/uploads/2024/06/1170x720_La_Vielle_Ville_d_Annecy-Monica_Dalmasso-11617-1920px.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  border-radius: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+}
+.background-img h1 {
+  color: white;
+  font-size: 50px;
+}
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  text-align: center;
+}
+.container-p {
+  width: 50%;
+}
+.section2 {
+  margin: 10% 0 0 5%; 
+}
+.section2 img{
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.section2 img:hover{
+    transform: scale(1.2);
+}  
+.animation{
+    opacity: 0; 
+    transform: translateY(30px);
+    transition: opacity 2s ease, transform 2s ease; 
+
+}
+.animation.visible {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+.container-section3 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 50px;
+  margin: 50px 5% 0 0;
+}
+.container-section3 img{
+    border-radius: 1rem;
+    transition: transform 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.container-section3 img:hover{
+    transform: scale(1.2);
+}   
+.section2 h3 {
+  text-align: right;
+  margin-right: 5%;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 0 5% 0;
+}
+.tableau {
+  display: grid;
+  justify-content: center;
+  margin: 20px;
+  border-radius: 3rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border-radius: 1rem;
+  background: transparent;
+  background: url("https://www.timographie360.fr/photos/realisations/principal/vignettes/drone-lac-annecy_60.jpg")
+    no-repeat center center;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  margin-top: 10%;
+}
+.header {
+  background: #a8ff78;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+.header1 {
+  background: #a8ff78;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-radius: 1rem 0 0 0;
+}
+.header2 {
+  background: #a8ff78;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0 1rem 0 0;
+}
+.data {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px soli;
+}
+.data:hover {
+  background: white;
+}
+.grid-container .header {
+  background: #a8ff78;
+  text-transform: uppercase;
+}
+.grid-container .data:last-child {
+  border-bottom: none;
+}
+iframe {
+  width: 50%;
+  height: 400px;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: none;
+}
+.container_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+.container_icon {
+  display: flex;
+  gap: 20px;
+}
+.container_icon a {
+  text-decoration: none;
+  color: black;
+}
+.container_icon a:hover {
+  color: #f1c40f;
+}
+.section_map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 0 10% 0;
+}
+.formulaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 0 10% 0;
+}
+
+form {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.campingideal.com/wp-content/uploads/2023/06/annecy_header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+input,
+textarea {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 16px;
+}
+::placeholder {
+  color: white;
+  font-weight: 700;
+}
+textarea {
+  height: 100px;
+}
+
+.button-form {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background: linear-gradient(to right, #78ffd6, #a8ff78);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-form:hover {
+  background: linear-gradient(to right, #64e3b4, #8cef64);
+}
+.scroll-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+ .scroll-to-top.show {
+    display: block;
+  }
+@media (max-width: 760px) {
+  .container-section3 {
+    flex-direction: column;
+  }
+}
