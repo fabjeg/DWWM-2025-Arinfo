@@ -1,26 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="biomarket.css" />
+    <!-- <script src="./javascript/index.js" defer></script> -->
+    <meta property="og:title" content="Bio Market" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://Bio-Market.fr/Bio-Market" />
+    <meta property="og:image" content="https://Bio-Market.fr/Bio-Market.jpg" />
+    <meta
+      name="description"
+      content="Cet article vous présente les Produits Bio Locaux et de Saison"
+    />
+    <title>Bio Market - Produits Bio Locaux et de Saison</title>
   </head>
-  <header>
-    <img src="./pictures/Maquette - Bio Market.PNG" alt="Bio Market" />
-    <div class="selecte">
-      <select name="choix_legume" id="choix_legume">
-        <option selected>Choisissez un produit</option>
-      </select>
-      <select name="choix_region" id="choix_region">
-        <option selected>Choisissez une région</option>
-      </select>
-    </div>
-  </header>
   <body>
-    <div class="picture">
-        <h1>Les produits du jardin dans votre assiette!</h1>
-        <p>Le meilleur endroit pour rester en bonne santé en consommant intelligemment !</p>
-    </div>
+    <header>
+      <div class="logo-header">
+        <img
+          src="./pictures/logo_header.png"
+          alt="spinach_carrot"
+          class="logo_img_header"
+        />
+        <div class="container_span_header">
+          <h1 class="h1_title_header">Bio Market</h1>
+          <p class="p_slogan__header">C'est bio et c'est bon</p>
+        </div>
+      </div>
+      <div class="select">
+        <select name="choix_legume" id="choix_legume">
+          <option value="" selected>Choisissez un produit</option>
+          <optgroup label="Légumes">
+            <option>Haricots verts</option>
+            <option>Petits pois</option>
+            <option>Radis</option>
+            <option>Salade</option>
+            <option>Oignons</option>
+            <option>Choux</option>
+            <option>Courgette</option>
+          </optgroup>
+          <optgroup label="Fruits">
+            <option>Banane</option>
+            <option>Fraise</option>
+            <option>Pomme</option>
+            <option>Poire</option>
+            <option>Mangue</option>
+            <option>Orange</option>
+          </optgroup>
+        </select>
+        <select name="choix_region" id="choix_region">
+          <option value="" selected>Choisissez une région</option>
+          <option>Pays de la Loire</option>
+          <option>Bretagne</option>
+          <option>Corse</option>
+          <option>Bourgogne-Franche-Comté</option>
+          <option>Hauts-de-France</option>
+          <option>Île-de-France</option>
+          <option>Grand Est</option>
+          <option>Auvergne-Rhône-Alpes</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <div class="picture">
+        <video autoplay loop muted class="background-video">
+          <source src="./video/biomarket.vid" type="video/mp4" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+        <div class="container_title">
+          <img
+            src="./pictures/panier.png"
+            alt="panier"
+            class="picture_basket"
+          />
+          <h2>Les produits du jardin dans votre</h2>
+          <span class="span_title">assiette!</span>
+          <p>Le meilleur endroit pour rester en bonne santé en</p>
+          <span class="span_p">consommant intelligemment !</span>
+        </div>
+        <a href="#section-next">
+          <img
+            src="./pictures/fleche-bas.png"
+            alt="flèche bas"
+            class="picture_arrow"
+          />
+        </a>
+      </div>
+      <h2 class="title_h2">
+        Du <span class="color_bio">BIO</span> dans<span class="highlight">
+          votr</span
+        >e assiette !
+      </h2>
+      <article>
+        <div class="container_cards" id="section-next">
+          <div class="card card1">
+            <img src="./pictures/local.png" alt="local" class="card_img" />
+            <h3>Produits locaux</h3>
+            <p>
+              Nos meilleures adresses pour une relation directe avec les
+              producteurs et un soutien à l'économie locale.
+            </p>
+          </div>
+          <div class="card card2">
+            <img src="./pictures/saison.png" alt="saison" class="card_img" />
+            <h3>À chacun sa saison</h3>
+            <p>
+              Qualité rime avec saisonnalité ! Suivez notre calendrier pour
+              découvrir nos fruits et légumes oubliés.
+            </p>
+          </div>
+          <div class="card card3">
+            <img src="./pictures/pouce.png" alt="pouce" class="card_img" />
+            <h3>Des prix bas toute l'année</h3>
+            <p>
+              Le bio trop cher c'est terminé! Nous vous promettons les meilleurs
+              prix tout en vous garantissant la qualité de nos produits.
+            </p>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <div class="container-footer">
+        <span class="footer_span">Crédits: </span>
+        <div class="container_footer_logo">
+          <span class="footer_span2">Contact:</span>
+          <img
+            src="./pictures/facebook.png"
+            alt="facebook"
+            class="logo_footer"
+          />
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
