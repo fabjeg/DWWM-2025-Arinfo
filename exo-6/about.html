@@ -8,6 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
     <link
       rel="icon"
       href="pictures/Capture d'écran 2025-04-03 133650.png"
@@ -24,6 +25,12 @@
             alt="Logo"
           />
         </div>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
         <div class="container_link">
           <nav>
             <ul>
@@ -128,7 +135,7 @@
             </div>
             <div class="form-row">
               <div class="form-group">
-                <label for="date_demenagement">Date déménagement</label>
+                <label for="date_demenagement">Date de déménagement</label>
                 <input
                   type="date"
                   id="date_demenagement"

@@ -1,0 +1,232 @@
+/*----About page----*/
+@media (max-width: 775px) {
+  .container_nav {
+    flex-direction: column;
+  }
+  .container_btn button {
+    width: 100%;
+    margin: 0;
+    padding: 5%;
+  }
+  .container_red_content {
+    .container_red_content_img{
+      margin-bottom: 40%;
+    }
+    flex-direction: column;
+    .container_red {
+      width: 100%;
+      height: 25vh;
+    }
+    .container_content {
+      width: 100%;
+      height: 25vh;
+    }
+  }
+  .container_etape {
+    flex-direction: column;
+    align-items: center;
+    .etape1,
+    .etape2,
+    .etape4 {
+      width: 100%;
+    }
+    .square,
+    .square2,
+    .square3 {
+      display: none;
+    }
+  }
+  .container_form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container_footer {
+    flex-direction: column;
+    align-items: center;
+    .container_footer_logo {
+      width: 50%;
+      align-items: center;
+    }
+    .container_footer2 {
+      margin: 0;
+    }
+    .container_footer_contact {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container_footer_open {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container_footer_ressources {
+      align-items: center;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .container_nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .burger {
+    display: flex;
+  }
+  .container_link {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: left 0.3s ease;
+    z-index: 90;
+    nav ul {
+      flex-direction: column;
+      gap: 20px;
+    }
+    li {
+      margin: 10px 0;
+    }
+  }
+  #menu-toggle:checked ~ .burger {
+    span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+  #menu-toggle:checked ~ .container_link {
+    left: 0;
+  }
+  .container_btn {
+    display: block;
+  }
+}
+/*----Home page----*/
+
+@media (max-width: 1330px) {
+  .background_picture_home {
+    .container_content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+      h4 {
+        margin: 0;
+      }
+      .container_background_box {
+        .background_picture_box {
+          width: 50%;
+          text-align: center;
+          padding: 0;
+          margin: 0;
+        }
+        .background_picture_box2 {
+          width: 50%;
+          text-align: center;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .container_red_home {
+    width: 100%;
+    .container_span_home {
+      height: 76%;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .container_services_home {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .container_provider {
+    flex-direction: column;
+    align-items: center;
+    .container_provider_img {
+      width: 100%;
+      height: 50vh;
+    }
+  }
+}
+@media (max-width: 775px) {
+  .container_red_home{
+    height: 70vh;
+  }
+
+}
+  @media (max-width: 475px) {
+    .background_picture_home .container_content .container_background_box {
+      display: none;
+    }
+    .container_red_home{
+      height: 60vh;
+    }
+    .home_service{
+        margin-top: 17%;
+    }
+  }
+  
+
+/*---services page---*/
+
+@media (max-width: 770px){
+  .container_content_services {
+    width: 100%;
+  }
+}
+
+/*---conseil page---*/
+
+@media (max-width: 980px) {
+  .container_grid {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: auto;
+  }
+
+  .container_grid1,
+  .container_grid2,
+  .container_grid3,
+  .container_grid4 {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+/*---contact pages---*/
+
+@media (max-width: 775px) {
+  .section_contact{
+    flex-direction: column;
+    .contact_content{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 70%;
+    }
+  }
+}
