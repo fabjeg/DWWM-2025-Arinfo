@@ -407,25 +407,22 @@ h1 {
   margin: 30px 0 30px 85px;
 }
 
-// Styles partagés à tous les blocs
 .container_grid1,
 .container_grid2,
 .container_grid3,
 .container_grid4 {
-  flex: 0 0 calc(50% - 8px); // 2 colonnes avec un écart horizontal de 16px
-  height: calc(50% - 10px);  // 2 lignes avec un écart vertical de 20px
+  flex: 0 0 calc(50% - 8px);
+  height: calc(50% - 10px);  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   h4 {
     font-size: 20px;
     margin: 0;
     padding: 10px 0 0 0;
     text-align: center;
   }
-
   p {
     font-size: 15px;
     margin: 0;
@@ -433,21 +430,16 @@ h1 {
     text-align: center;
   }
 }
-
-// Styles spécifiques à chaque bloc
 .container_grid1,
 .container_grid4 {
   background-color: $color_black;
-
   h4, p {
     color: $color_white;
   }
 }
-
 .container_grid2,
 .container_grid3 {
   background-color: $color_orange;
-
   h4, p {
     color: $color_black;
   }
