@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*---header---*/
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.5);
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+.picture img {
+  height: 70px;
+}
+.nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav a {
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+.nav a:hover {
+  color: #ab864c;
+}
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/*---header---*/
+/*---banniere---*/
+.background_picture {
+  background: url("/évaluation/pictures/HAUTE-COUTURE.jpg") no-repeat center
+    center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+}
+/*---1er container---*/
+.container_title_text {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  margin-top: 70px;
+  text-align: center;
+  font-family: "Kaisei Decol", serif;
+}
+.title h1 {
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0;
+}
+.title p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+.container_text p {
+  border: 1px solid #000;
+  padding: 50px;
+  margin: 50px 20%;
+  text-align: center;
+  font-size: 20px;
+}
+/*---1er container---*/
+/*---2eme container---*/
+.container-gold {
+  background-color: #ab864c;
+  text-align: center;
+  padding: 40px;
+}
+.container-gold h2 {
+  color: #ffffff;
+  font-family: "Kaisei Decol", serif;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+.cakes-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.picture-cake {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.picture-cake img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+}
+.picture-cake h3 {
+  font-family: "Kaisei Decol", serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+}
+.picture-cake p {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+#button1 {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-size: 15px;
+  margin-top: 50px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+#button1:hover {
+  background-color: #ffffff;
+  color: #ab864c;
+  transform: scale(1.1);
+}
+
+@media (max-width: 750px) {
+  .container-gold {
+    padding-bottom: 20px;
+  }
+  .cakes-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .picture-cake {
+    width: 100%;
+  }
+}
+/*---2eme container---*/
+/*---3eme container---*/
+.container_story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 0;
+  flex-wrap: wrap;
+}
+.container_story img {
+  width: 300px;
+  height: auto;
+}
+.container_story_text {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+}
+.container_story_text img {
+  width: 30px;
+  height: auto;
+  text-align: center;
+}
+.container_story_text h2 {
+  font-family: "Kaisei Decol", serif;
+  font-size: 30px;
+  margin: 0;
+}
+.container_story_text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 30px 0 20px 0;
+}
+.container_story_text button {
+  align-self: start;
+  background-color: #ab864c;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.7s ease;
+}
+
+.container_story_text button:hover {
+  background-color: #ffffff;
+  color: #ab864c;
+  border: 1px solid #000000;
+  transform: scale(1.1);
+}
+
+.bottom-line {
+  width: 80%;
+  height: 1px;
+  background-color: #000000;
+  margin: 0 0 0 9%;
+}
+@media (max-width: 750px) {
+  .container_story_text {
+    align-items: center;
+  }
+  .container_story_text h2 {
+    text-align: center;
+  }
+  .container_story_text p,
+  button {
+    margin-inline: 5%;
+  }
+}
+/*---3eme container---*/
+/*---4eme container---*/
+.container_conatct {
+  display: flex;
+  margin: 10%;
+}
+.contact_text {
+  width: 40%;
+}
+.contact_text h2 {
+  font-family: "Kaisei Decol", serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.contact_text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.container_form {
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1%;
+}
+.form_name {
+  display: flex;
+  gap: 20px;
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+label {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+form label[for="nom"],
+form label[for="prenom"] {
+  font-size: 10px;
+  margin: 0;
+}
+.form_name div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.form_name label {
+  margin-top: 5px;
+}
+form label {
+  margin: 0;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 3px 16px;
+  border: 1px solid #555;
+  border-radius: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+form input[type="checkbox"] {
+  margin-right: 10px;
+}
+form label[for="confidentialite"] {
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  margin: 10px 0 10px 0;
+}
+form label[for="message"] {
+  margin-top: 15px;
+}
+button {
+  background-color: #ab864c;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+@media (max-width: 840px) {
+  .container_conatct {
+    flex-direction: column;
+    margin: 0;
+  }
+  .contact_text {
+    width: 100%;
+  }
+}
+/*---4eme container---*/
+/*---5eme container---*/
+.container_atelier {
+  background-color: #ab864c;
+  padding: 20px 0 20px 0;
+}
+.container_atelier h2 {
+  color: #ffffff;
+  font-family: "Kaisei Decol", serif;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.container_atelier p {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 200;
+  margin: 0;
+}
+/*---5eme container---*/
+/*---6eme container---*/
+.map_container {
+  width: 100%;
+  height: 30vh;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+/*---6eme container---*/
+/*---7eme container---*/
+.container_footer {
+  background-color: #000000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0 50px 0;
+}
+.picture_footer img {
+  filter: brightness(0) invert(1);
+}
+.link_footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.link_footer a {
+  color: white;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.link_footer a:hover {
+  color: #ab864c;
+}
+.hours_footer {
+  color: #ffffff;
+}
+.hours_footer p {
+  margin: 10px 0 0 0;
+  font-family: "Poppins", sans-serif;
+}
+.hours_footer p:first-child {
+  position: relative;
+  top: -10px;
+}
+.reseaux_footer {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+.reseaux_footer i {
+  color: #ffffff;
+  font-size: 25px;
+}
+.reseaux_footer i:hover {
+  color: #ab864c;
+}
+.legal_information {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  border: 1px solid #ab864c;
+}
+@media (max-width: 760px) {
+  .container_footer {
+    flex-direction: column;
+  }
+  .hours_footer {
+    margin-top: 40px;
+  }
+  .hours_footer p {
+    margin: 0;
+  }
+  .legal_information {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0 10px 0;
+  }
+  .legal_information p {
+    margin: 0;
+  }
+}
+/*---7eme container---*/

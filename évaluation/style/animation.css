@@ -1,0 +1,149 @@
+/*--- animation h1 ---*/
+.title h1 {
+  display: inline-block;
+  font-size: 24px;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #000;
+  animation: typing 7s steps(60) 1s normal both, blink 0.75s step-end infinite,
+    disappearCursor 0.1s 5s forwards;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  100% {
+    border-color: transparent;
+  }
+}
+@keyframes disappearCursor {
+  100% {
+    border-color: transparent;
+  }
+}
+.title p:nth-child(2) {
+  opacity: 0;
+  visibility: visible;
+  transform: translateY(30px);
+  animation: fadeInUp 5s forwards;
+  animation-delay: 5s;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    visibility: visible;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+/*---annimation container_gold---*/
+.picture-cake {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.cakes-wrapper .picture-cake {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.cakes-wrapper .picture-cake.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.picture-cake:nth-child(1) {
+  transition-delay: 0.5s;
+}
+.picture-cake:nth-child(2) {
+  transition-delay: 1s;
+}
+.picture-cake:nth-child(3) {
+  transition-delay: 1.5s;
+}
+.cakes-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*---annimation section formulaire---*/
+.contact_text {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.container_form {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.contact_text.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.container_form.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ab864c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+.scroll-to-top:hover {
+  background-color: #9a7739;
+}
