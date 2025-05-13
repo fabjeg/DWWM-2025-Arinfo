@@ -1,0 +1,41 @@
+@mixin card-effect($rotateX: 10deg, $rotateY: 10deg) {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: rotateX($rotateX) rotateY($rotateY);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+}
+@mixin rotating-gradient-bg($color1, $color2) {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, $color1, $color2, $color1);
+    animation: spin-bg 6s linear infinite;
+    z-index: -1;
+    transition: opacity 0.4s ease-in-out;
+    opacity: 0;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+@keyframes spin-bg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

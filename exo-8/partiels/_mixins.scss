@@ -1,0 +1,68 @@
+@mixin bouton-style($couleur) {
+  background-color: $couleur;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($couleur, 10%);
+  }
+}
+@mixin apply-theme($theme) {
+  background-color: map-get($theme, primary);
+  color: map-get($theme, text);
+}
+@mixin generate-spacing($map) {
+  @each $key, $value in $map {
+    .m-#{$key} {
+      margin: $value;
+    }
+    .p-#{$key} {
+      padding: $value;
+    }
+  }
+}
+@mixin focus-style {
+  &:focus {
+    outline: 3px solid #ff4500;
+    outline-offset: 2px;
+  }
+}
+@mixin heading-style($heading) {
+  font-size: map-get(map-get($heading-styles, $heading), font-size);
+  font-weight: map-get(map-get($heading-styles, $heading), font-weight);
+}
+@each $key, $value in $shadows {
+  .shadow-#{$key} {
+    box-shadow: $value;
+  }
+}
+@mixin generate-grid($breakpoints) {
+  @each $prefix, $width in $breakpoints {
+    @for $i from 1 through 12 {
+      .col-#{$prefix}-#{$i} {
+        grid-column: span #{$i};
+      }
+
+      @media (max-width: #{$width}) {
+        .col-#{$prefix}-#{$i} {
+          grid-column: span 12;
+        }
+      }
+    }
+  }
+}
+@mixin auto-grid($min, $gap) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+  gap: $gap;
+}
+$colors: (red, blue, green, orange, purple);
+@mixin card {
+  border-radius: 0.5rem;
+  background-color: map-get($active-theme, secondary);
+  color: map-get($active-theme, text);
+  padding: 20px;
+  @content;
+}

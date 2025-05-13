@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Design Tokens Sass</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <input
+      type="checkbox"
+      id="theme-toggle"
+      hidden
+    />
+    <label
+      for="theme-toggle"
+      class="toggle-label"
+      >Changer de thème</label
+    >
+    <div class="page">
+      <header>
+        <h1>Design Tokens en Sass</h1>
+      </header>
+      <div class="anim-fade-in">Apparaît en fondu</div>
+      <div class="anim-slide-up">Glisse vers le haut</div>
+      <main>
+        <section class="container">
+          <h2>Thème Actif</h2>
+          <p>Ce site utilise un système de design tokens Sass avec fallback.</p>
+          <button class="btn-primary">Bouton Primary</button>
+          <button class="btn-warning">Bouton Warning</button>
+          <button class="btn-danger">Bouton Danger</button>
+
+          <div class="card">
+            <h3>Carte Thématique</h3>
+            <p>Les couleurs viennent du thème actif.</p>
+          </div>
+        </section>
+        <section>
+          <div class="container-grid">
+            <div class="col-sm-6 col-md-4 col-lg-3">Colonne 1</div>
+            <div class="col-sm-6 col-md-4 col-lg-3">Colonne 2</div>
+            <div class="col-sm-6 col-md-4 col-lg-3">Colonne 3</div>
+            <div class="col-sm-6 col-md-4 col-lg-3">Colonne 4</div>
+          </div>
+          <div class="m-3 p-5">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              a, quas blanditiis labore doloribus obcaecati cum, ullam
+              exercitationem perferendis facere et. Nam similique blanditiis
+              velit rerum impedit quaerat, ipsam unde.
+            </p>
+          </div>
+        </section>
+      </main>
+      <div class="shadow-sm container-shadow">Shadow Small</div>
+      <div class="shadow-md container-shadow">Shadow Medium</div>
+      <div class="shadow-lg container-shadow">Shadow Large</div>
+      <div class="container-auto-grid">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+      </div>
+      <div class="card-custom m-5 p-3 shadow-lg">
+        <h4>Carte personnalisée</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          nulla cumque voluptates et nisi porro accusantium nam quas, magni
+          nobis neque necessitatibus, itaque quo aut eos. Vitae incidunt error
+          accusamus.
+        </p>
+      </div>
+      <footer>
+        <p>&copy; Exemple Design Tokens</p>
+      </footer>
+    </div>
+  </body>
+</html>

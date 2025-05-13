@@ -1,0 +1,7 @@
+@function design-token($key) {
+  @if map-has-key($active-theme, $key) {
+    @return map-get($active-theme, $key);
+  } @else if map-has-key($light-theme, $key) {
+    @return map-get($light-theme, $key);
+  }
+}

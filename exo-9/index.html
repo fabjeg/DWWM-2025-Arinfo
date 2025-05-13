@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+      integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f30c0be967.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body data-bs-theme="light">
+    <header>
+      <!-- barre de navigation -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle">
+        <div class="container-lg">
+          <a
+            class="navbar-brand w-50"
+            href="#"
+            ><img
+              src="/exo-9/pictures/logo-green-tech.avif"
+              alt="green tech"
+              class="rounded-circle img-fluid"
+              width="80"
+              height="80"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#a-propos"
+                  >À propos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#services"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- barre de navigation -->
+      <h1 class="text-center mt-5">GreenTech Solutions</h1>
+      <!-- container carousel -->
+      <div
+        class="container bg-success-subtle mt-5 rounded-3 p-5 d-flex flex-column align-items-center"
+      >
+        <p class="w-50 mt-sm-3 mt-md-5">
+          GreenTech Solutions est une entreprise innovante spécialisée dans le
+          développement de solutions technologiques durables pour un avenir
+          respectueux de l'environnement.
+        </p>
+        <div
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade w-50 mx-auto mt-5"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="/exo-9/pictures/amjith-s-rvScL8J-XfE-unsplash.jpg"
+                class="w-100 rounded-3"
+                alt="Green technology, environmentally friendly, and electronic devices concepts."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/exo-9/pictures/brandon-lee-VDoLq_k9sPo-unsplash.jpg"
+                class="w-100 rounded-3"
+                alt="Réseau intelligent Énergie renouvelable Technologie environnementale"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="/exo-9/pictures/zj-luk-DzZcnv8UZjY-unsplash.jpg"
+                class="w-100 rounded-3"
+                alt="Concept de technologie environnementale. Objectifs de développement durable."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- container carousel -->
+    </header>
+    <!-- section À propos -->
+    <main>
+      <section id="a-propos">
+        <h2 class="text-center mt-5">À propos de GreenTech Solutions</h2>
+
+        <div class="container-xl mt-5">
+          <div class="row align-items-center">
+            <div class="col-md-4 mb-4">
+              <img
+                src="/exo-9/pictures/rahul-singh-bhadoriya-5aMuLXs4Cw0-unsplash.jpg"
+                alt="rahul-singh-bhadoriya"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div
+              class="col-md-8 container-sm-4 bg-primary-subtle w-50 ms-5 rounded"
+            >
+              <p class="text-center text-md-start fs-6 fs-md-5 p-5">
+                Chez Green Tech Solutions, nous accompagnons les entreprises
+                dans la transition énergétique de leurs bâtiments pour une
+                conformité optimale avec les réglementations, notamment les
+                décrets BACS et tertiaire. En optimisant la gestion énergétique
+                de vos infrastructures, vous réduisez vos consommations,
+                diminuez vos coûts et contribuez activement à la transition vers
+                une économie plus verte.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="container-xl mt-5">
+          <div class="row align-items-center flex-md-row-reverse">
+            <div class="col-md-6 mb-4">
+              <img
+                src="/exo-9/pictures/dell-xIodDks1cQ8-unsplash.jpg"
+                alt="poste de contrôle GTB"
+                class="img-fluid rounded"
+              />
+            </div>
+            <div class="col-md-6 container-sm-4 bg-primary-subtle w-50 rounded">
+              <p class="text-center text-md-start fs-6 fs-md-5 p-5">
+                Nos solutions de GTB offrent un contrôle centralisé et
+                intelligent de vos systèmes énergétiques. Vous pouvez ainsi
+                superviser et optimiser l’éclairage, le chauffage, la
+                ventilation et bien plus encore depuis une plateforme unique. En
+                automatisant les équipements de vos infrastructures, la GTB
+                permet de réduire les gaspillages énergétiques, de maintenir un
+                confort optimal et de respecter les normes du décret BACS.
+              </p>
+            </div>
+          </div>
+          <section>
+            <div
+              class="accordion"
+              id="accordionExample"
+            >
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    Notre Mission : Révolutionner la Technologie Verte
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong
+                      >GreenTech Solutions se consacre à l'innovation dans la
+                      transition énergétique.</strong
+                    >
+                    Notre mission est de proposer des solutions technologiques
+                    durables pour aider les entreprises à réduire leur empreinte
+                    carbone tout en optimisant leur efficacité énergétique.
+                    Grâce à nos produits innovants, nous transformons les
+                    bâtiments en infrastructures intelligentes et écologiques,
+                    tout en respectant les normes environnementales.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Nos Solutions de Gestion de l'Énergie
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong
+                      >Une gestion optimisée de l'énergie pour une performance
+                      maximale.</strong
+                    >
+                    Nos solutions de gestion de l'énergie (GTB) permettent une
+                    supervision centralisée des systèmes énergétiques. De
+                    l'éclairage à la climatisation, en passant par la régulation
+                    de la température, nous proposons des outils intelligents
+                    pour surveiller et ajuster les consommations, réduisant
+                    ainsi les gaspillages énergétiques et les coûts
+                    opérationnels.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Innovations Écologiques : Vers un Futur Durable
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong
+                      >Nous réinventons l'avenir de la technologie
+                      verte.</strong
+                    >
+                    En tant que leader dans l'innovation verte, nous développons
+                    des technologies qui respectent l'environnement tout en
+                    apportant des avantages économiques. Nos projets intègrent
+                    des énergies renouvelables, des systèmes de stockage
+                    intelligents et des solutions de mobilité durable, pour
+                    construire un avenir où la technologie et la planète
+                    coexistent harmonieusement.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- section À propos -->
+      <!-- section services -->
+      <section id="services">
+        <h3 class="text-center mt-5 mb-5">Nos Services</h3>
+        <div
+          class="container-l d-flex flex-column flex-md-row justify-content-center gap-3 mx-3"
+        >
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div
+                class="col-md-4 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="/exo-9/pictures/adam-jones-bZAKLNPz41s-unsplash.jpg"
+                  class="img-fluid"
+                  alt="adam-jones"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">Relamping</h5>
+                  <p class="card-text fs-5 mb-5 mt-5">
+                    Le relamping consiste à remplacer les systèmes d’éclairage
+                    énergivores par des solutions LED, réduisant
+                    significativement la consommation électrique. Cette approche
+                    améliore le confort visuel et répond aux exigences
+                    d’efficacité énergétique tout en diminuant les coûts
+                    opérationnels. Green Tech Solutions vous propose des
+                    solutions de relamping adaptées aux besoins des
+                    environnements professionnels.
+                  </p>
+                  <a
+                    class="card-text d-flex justify-content-center align-items-center btn btn-success text-decoration-none fs-4 fw-bold mt-3"
+                  >
+                    En savoir plus sur le relamping
+                    <i class="fa-solid fa-arrow-right ms-2 fs-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div
+                class="col-md-4 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="/exo-9/pictures/nathalia-rosa-UlhqBdj6ecQ-unsplash.jpg"
+                  class="img-fluid"
+                  alt="nathalia-rosa"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold text-center">
+                    Courtage en énergie grâce aux CEE
+                  </h5>
+                  <p class="card-text fs-5 mt-4">
+                    Les Certificats d’Économies d’Énergie (CEE) constituent une
+                    aide précieuse pour les entreprises souhaitant financer
+                    leurs projets d’efficacité énergétique. En intégrant le
+                    courtage en énergie avec des solutions comme le relamping ou
+                    la déstratification, les entreprises peuvent obtenir des CEE
+                    pour alléger leur investissement et accélérer le retour sur
+                    investissement.
+                  </p>
+                  <a
+                    class="card-text d-flex justify-content-center align-items-center btn btn-success text-decoration-none fs-4 fw-bold mt-3"
+                  >
+                    En savoir plus sur le Courtage en énergie
+                    <i class="fa-solid fa-arrow-right ms-2 fs-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section contact -->
+      <section id="contact">
+        <h3 class="text-center mt-5 mb-5">Contact</h3>
+        <div class="container-l d-flex justify-content-center">
+          <form class="w-50">
+            <div class="mb-3">
+              <label
+                for="name"
+                class="form-label"
+                >Nom</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label
+                for="email"
+                class="form-label"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label
+                for="message"
+                class="form-label"
+                >Message</label
+              >
+              <textarea
+                class="form-control"
+                id="message"
+                rows="3"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary mb-5"
+            >
+              Envoyer Message
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- section contact -->
+    </main>
+    <!-- section footer -->
+    <footer>
+      <footer class="bg-primary-subtle py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <h5>Liens rapides</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    href="#"
+                    class="text-decoration-none"
+                    >Accueil</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#a-propos"
+                    class="text-decoration-none"
+                    >À propos</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="text-decoration-none"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="text-decoration-none"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h5>Contact</h5>
+              <p>Email : contact@greentechsolutions.com</p>
+              <p>Téléphone : +33 1 23 45 67 89</p>
+              <p>Adresse : 123, rue des solutions, Paris</p>
+            </div>
+            <div class="col-md-4 mb-3 d-flex flex-column align-items-center">
+              <h5>Suivez-nous</h5>
+              <div>
+                <a
+                  href="#"
+                  class="text-body me-3"
+                >
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-body me-3"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="#"
+                  class="text-body me-3"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="text-center mt-3">
+            <p class="mb-0">
+              &copy; 2025 GreenTech Solutions - Tous droits réservés.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </footer>
+    <!-- section footer -->
+  </body>
+</html>

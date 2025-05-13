@@ -1,0 +1,59 @@
+@import "partiels/-variables";
+@import "partiels/_buttons";
+@import "partiels/functions";
+body {
+  margin: 0;
+  padding: 0;
+  header {
+    width: 100%;
+    height: 50vh;
+    background-color: $primary-color;
+  }
+  footer {
+    width: 100%;
+    height: 50vh;
+    background-color: $secondary-color;
+  }
+  main {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .container {
+      padding: 20px;
+      h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+      p {
+        line-height: 1.6;
+      }
+    }
+    .box {
+      @include flex-center;
+      flex-direction: column;
+      button {
+        @include border-radius(5px);
+        background-color: $primary-color;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        @include card-effect(8deg, -8deg);
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+      .card {
+        @include border-radius(10px);
+        background-color: darken($secondary-color, 10%);
+        padding: 20px;
+        margin: 50px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        @include rotating-gradient-bg(#ff6ec4, #7873f5);
+      }
+    }
+  }
+}
