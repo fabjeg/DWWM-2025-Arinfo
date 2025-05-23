@@ -51,3 +51,48 @@ function comparer() {
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("btnComparer").addEventListener("click", comparer);
 });
+
+// exercice 5
+let date = new Date(2012, 1, 20, 3, 12);
+
+console.log("la date ===>", date);
+
+// exercice 6
+
+function getWeekday(date) {
+  const days = ["SU", "MO", "TU", "WE", "TH", "FR", "SA"];
+  return days[date.getDay()];
+}
+console.log("jourDeLaSemaine ==>", getWeekday(date));
+
+// exercice 7
+
+function getLocalDay(date) {
+  const day = date.getDay();
+
+  //   if (day === 0) {
+  //     return 7;
+  //   } else {
+  //     return day;
+  //   }
+
+  return day === 0 ? 7 : day;
+}
+console.log("Jour de la semaine ==>", getLocalDay(date));
+
+// exercice 8
+
+function getDateAgo(date, days) {
+  const dateCopy = new Date(date);
+  dateCopy.setDate(date.getDate() - days);
+  return dateCopy;
+}
+console.log("Il y a quelques jours ==>", getDateAgo(date, 1));
+
+// exercice 9
+
+function getLastDayOfMonth(year, month) {
+  return new Date(year, month + 1, 0);
+}
+
+console.log("Le dernier jour du mois ==>", getLastDayOfMonth(2012, 1));
